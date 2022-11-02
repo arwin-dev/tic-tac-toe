@@ -1,7 +1,7 @@
 import os
 import time
 import random
-from Board import board
+from assets.Board import board
 
 def metaGameTrackerPrint(meta):
         print('\n \t\t\t'+meta[1]+' | '+meta[2]+' | '+meta[3]+' \n \t\t\t--+---+-- \n \t\t\t'+meta[4]+' | '+meta[5]+' | '+meta[6]+' \n \t\t\t--+---+-- \n \t\t\t'+meta[7]+' | '+meta[8]+' | '+meta[9]+' \n\n')
@@ -164,7 +164,7 @@ def main():
                 os.system('cls')
                 
             else:
-                print('\n\n\t\t\t Your move has been recorded!!!!\n')
+                print('\n\n\t\t Your move has been recorded!!!!\n')
                 if status == 'reset': 
                     print('\t\t Game Completed -- No Winner -- Game Resetting... \U0001F972\U0001F972')
                     time.sleep(3)
