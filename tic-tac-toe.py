@@ -68,7 +68,7 @@ def computer(rand):
     return random.choice(rand)
 
 def main():
-    print('\n\t\t\t\tTic-Tac-Toe \U0001F603\n')
+    print('\n\t\t\t\t\t\t\t\tTic-Tac-Toe \U0001F603\n')
     print('Game Instructions:')
     print('\n→ This is a variation of the classic game of tic-tac-toe, where 2 players take turns putting X\'s and O\'s in a 3x3 grid, and the first to get 3 in a row wins.' +
           '\n→ In this version, there are 9 instances of the game being played simultaneously. Each turn, a player may make a single move in any one of the 9 game instances.' +
@@ -82,7 +82,7 @@ def main():
         metaGame.game[inst] = board()
 
     while True:
-        comp = input('Select the number of players playing(One player - 1, Two players - 2):')
+        comp = input('Select the number of players (One player - 1, Two players - 2):')
         if comp.isdigit() and int(comp) in {1,2}:
             playerCount = int(comp)
             break
